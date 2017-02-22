@@ -1,13 +1,7 @@
-# Kulor-reactify
+# React Gooey Nav
 
 ## Description
-This is a colour conversion app that allows you to convert colours between RGB, HEX and HSL colour modes. The background of the app updates to provide you with a representation of what the colour you are converting looks like. It is written using vanilla React without any flux/redux framework to keep it simple.
-
-Includes:
-* Randomisation
-* Lighten
-* Darken
-* More to come...
+This is a port of [Lucas Bebber's](http://codepen.io/lbebber) work around a gooey effect navigation. I have taken his effect and implemented it within React, which allows me to make use of SVGs and the neat animations created with this. It uses some Material design in terms of depth and ripple effects.
 
 ## Getting Started
 1. Clone this repository
@@ -16,20 +10,8 @@ Includes:
 
 Working project: http://lmcjt.com/kulor
 
-### Tools
-- React-toolbox (http://react-toolbox.com/)
-- SASS (http://sass-lang.com/)
-- TinyColour (https://github.com/bgrins/TinyColor)
-
 ### Acknowledgements
 Navigation is based on [Lucas Bebber's Gooey Menu](http://codepen.io/lbebber/pen/rawQKR) but has been altered to work alongside React and React-toolbox
-
-### Pipeline
-- Tooltips for hints on use
-- Add alpha
-- Additional colour modes
-- Ability to get different colour combos (triad/complementary/tetrad)
-- Colour palette for storing colours from the session
 
 ## Contact
 Feel free to contact me directly through twitter @lmcjt or my website [lmcjt.com](http://lmcjt.com)
