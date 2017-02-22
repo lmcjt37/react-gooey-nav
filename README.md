@@ -3,12 +3,14 @@
 ## Description
 This is a port of [Lucas Bebber's](http://codepen.io/lbebber) work around a gooey effect navigation. I have taken his effect and implemented it within React, which allows me to make use of SVGs and the neat animations created with this. It uses some Material design in terms of depth and ripple effects.
 
+Demo: [https://lmcjt37.github.io/react-gooey-nav/](https://lmcjt37.github.io/react-gooey-nav/)
+
+This work is being used in one of my live projects here: [lmcjt.com/kulor](http://lmcjt.com/kulor)
+
 ## Getting Started
 1. Clone this repository
 2. Run `npm install && npm run dev`, this will install all dependencies, build and start up the server
 3. Visit `localhost:8080` in your browser (You can also visit the app on your device when on the same network)
-
-Working project: http://lmcjt.com/kulor
 
 ### Acknowledgements
 Navigation is based on [Lucas Bebber's Gooey Menu](http://codepen.io/lbebber/pen/rawQKR) but has been altered to work alongside React and React-toolbox
