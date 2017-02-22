@@ -56,7 +56,7 @@
   },
   "scripts": {
     "build:dev": "cross-env NODE_ENV=development webpack --config webpack.config",
-    "build:prod": "npm run test && cross-env NODE_ENV=production webpack --config webpack.config",
+    "build:prod": "cross-env NODE_ENV=production webpack --config webpack.config",
     "dev": "npm run build:dev && npm start",
     "start": "node server"
   },

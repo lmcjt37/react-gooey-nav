@@ -10,7 +10,7 @@ const config = {
     './src/app/client.js'
   ],
   output: {
-    path: path.join(__dirname, '/src/public'),
+    path: path.join(__dirname, '/src/docs'),
     filename: 'bundle.js',
     publicPath: '/'
   },
