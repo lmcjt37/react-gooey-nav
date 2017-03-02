@@ -19,7 +19,7 @@ app.use(webpackDevMiddleware(compiler, {
 app.use(webpackHotMiddleware(compiler));
 
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, './src/public/index.html'));
+  res.sendFile(path.join(__dirname, './docs/index.html'));
 });
 
 const port = 8080;
