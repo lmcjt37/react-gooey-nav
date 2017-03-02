@@ -24,10 +24,8 @@ h1,h2,h3,h4 {
     margin-left: 5px;
 }
 
-.buttonContainer {
+%container {
     margin: auto;
-    margin-bottom: 4%;
-    padding-top: 2%;
     position: relative;
     text-align: center;
     width: 50%;
@@ -37,4 +35,15 @@ h1,h2,h3,h4 {
     @media screen and (max-width: $break-small) {
         width: 90%;
     }
+}
+
+.linkContainer {
+    @extend %container;
+    padding-top: 1%;
+}
+
+.buttonContainer {
+    @extend %container;
+    padding-top: 2%;
+    margin-bottom: 4%;
 }
