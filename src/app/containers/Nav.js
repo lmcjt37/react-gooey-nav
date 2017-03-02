@@ -1,7 +1,10 @@
 import React from 'react';
-import themedGooeyNav from '../theme/themedGooeyNav.scss';
-import GooeyNavItem from '../components/gooeyNavItem.js';
-import GooeySvg from '../components/gooeySvg.js';
+import themedGooeyNav1 from '../theme/themedGooeyNav1';
+import themedGooeyNav2 from '../theme/themedGooeyNav2';
+import themedGooeyNav3 from '../theme/themedGooeyNav3';
+import themedGooeyNav4 from '../theme/themedGooeyNav4';
+import GooeyNavItem from '../components/gooeyNavItem';
+import GooeySvg from '../components/gooeySvg';
 
 export default class Nav extends React.Component {
 
@@ -19,7 +22,7 @@ export default class Nav extends React.Component {
         console.log(`${name} was clicked!`);
     }
 
-    getNavItems() {
+    getNavItems(theme) {
 
         const array = [];
         for (var prop in this.props.features) {
@@ -30,7 +33,7 @@ export default class Nav extends React.Component {
             return (
                 <GooeyNavItem
                     key={name}
-                    theme={themedGooeyNav}
+                    theme={theme}
                     onClick={() => this.handleClick(name)}
                     {...this.props.features[name]} />
             );
@@ -46,6 +49,23 @@ export default class Nav extends React.Component {
     }
 
     render() {
+
+        let themedGooeyNav;
+        switch(this.props.idx) {
+            case 1:
+                themedGooeyNav = themedGooeyNav1;
+                break;
+            case 2:
+                themedGooeyNav = themedGooeyNav2;
+                break;
+            case 3:
+                themedGooeyNav = themedGooeyNav3;
+                break;
+            case 4:
+                themedGooeyNav = themedGooeyNav4;
+                break;
+        }
+
         return (
             <nav className={themedGooeyNav.menu}>
                 <input type="checkbox" href="#" className={ themedGooeyNav['menu-open'] } name="menu-open" id="menu-open" onChange={ () => this.onToggle() } />
@@ -55,7 +75,7 @@ export default class Nav extends React.Component {
                     <span className={`${themedGooeyNav.hamburger} ${themedGooeyNav['hamburger-3']}`}></span>
                 </label>
 
-                {this.getNavItems()}
+                {this.getNavItems(themedGooeyNav)}
 
             </nav>
         );
